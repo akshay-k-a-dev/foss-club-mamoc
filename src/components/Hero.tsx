@@ -25,20 +25,39 @@ const Hero = ({ data }: HeroProps) => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      
-      {/* Particle Background */}
-      <ParticleBackground />
-      
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/70" />
-      
-      {/* Content */}
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Navigation Header */}
+      <nav className="relative z-20 p-6">
+        <div className="container mx-auto flex justify-between items-center">
+          <div className="text-xl font-bold text-gradient">
+            FOSS Club
+          </div>
+          <div className="hidden md:flex space-x-8">
+            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors duration-300">About</a>
+            <a href="#objectives" className="text-muted-foreground hover:text-primary transition-colors duration-300">Objectives</a>
+            <a href="#events" className="text-muted-foreground hover:text-primary transition-colors duration-300">Events</a>
+            <a href="#gallery" className="text-muted-foreground hover:text-primary transition-colors duration-300">Gallery</a>
+            <a href="#team" className="text-muted-foreground hover:text-primary transition-colors duration-300">Team</a>
+            <a href="#partners" className="text-muted-foreground hover:text-primary transition-colors duration-300">Partners</a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Content */}
+      <div className="relative flex-1 flex items-center justify-center">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        
+        {/* Particle Background */}
+        <ParticleBackground />
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background/70" />
+        
+        {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
         {/* Floating Icons */}
         <div className="absolute -top-20 left-1/4 animate-bounce">
@@ -109,13 +128,14 @@ const Hero = ({ data }: HeroProps) => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <button
-        onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-muted-foreground hover:text-primary transition-colors duration-300"
-      >
-        <ChevronDown className="w-8 h-8" />
-      </button>
+        {/* Scroll Indicator */}
+        <button
+          onClick={scrollToAbout}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-muted-foreground hover:text-primary transition-colors duration-300"
+        >
+          <ChevronDown className="w-8 h-8" />
+        </button>
+      </div>
     </section>
   );
 };

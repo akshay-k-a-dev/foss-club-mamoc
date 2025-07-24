@@ -40,9 +40,9 @@ const Index = () => {
       <About data={data.about} />
       <Objectives data={data.objectives} />
       <Events data={data.events} />
+      <Gallery data={data.gallery} />
       <JoinForm data={data.join} socials={data.socials} />
       <Team data={data.team} />
-      <Gallery data={data.gallery} />
       <Partners data={data.partners} />
       <Footer data={data} />
     </div>

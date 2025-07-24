@@ -34,7 +34,7 @@ const Team = ({ data }: TeamProps) => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20 bg-card/5">
+    <section id="team" ref={sectionRef} className="py-20 bg-card/5">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">

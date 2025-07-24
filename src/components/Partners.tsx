@@ -33,7 +33,7 @@ const Partners = ({ data }: PartnersProps) => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-20">
+    <section id="partners" ref={sectionRef} className="py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className={`inline-flex items-center gap-2 mb-4 transition-all duration-1000 transform ${

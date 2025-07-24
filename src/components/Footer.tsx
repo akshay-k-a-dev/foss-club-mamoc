@@ -57,8 +57,18 @@ const Footer = ({ data }: FooterProps) => {
                 </a>
               </li>
               <li>
+                <a href="#objectives" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  Objectives
+                </a>
+              </li>
+              <li>
                 <a href="#events" className="text-muted-foreground hover:text-primary transition-colors duration-300">
                   Events
+                </a>
+              </li>
+              <li>
+                <a href="#gallery" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  Gallery
                 </a>
               </li>
               <li>
@@ -67,8 +77,8 @@ const Footer = ({ data }: FooterProps) => {
                 </a>
               </li>
               <li>
-                <a href="mailto:fossclub@mamocollege.org" className="text-muted-foreground hover:text-primary transition-colors duration-300">
-                  Contact
+                <a href="#partners" className="text-muted-foreground hover:text-primary transition-colors duration-300">
+                  Partners
                 </a>
               </li>
             </ul>
