@@ -1,0 +1,58 @@
+{
+  "clubName": "FOSS Club — MAMO College",
+  "tagline": "Code. Collaborate. Contribute.",
+  "ctaText": "Join the Movement",
+  "ctaLink": "https://discord.gg/yourlink",
+
+  "about": {
+    "description": "The FOSS Club at MAMO College is a student-led initiative to promote the values of Free and Open Source Software. We conduct hands-on sessions, hackathons, contribution drives, and open community events to empower students through tech freedom and collaboration."
+  },
+
+  "objectives": [
+    "Promote FOSS culture among students.",
+    "Provide real-world contribution opportunities.",
+    "Build and host college/community-level projects.",
+    "Collaborate with national movements like μLearn, TinkerHub, and FossUnited."
+  ],
+
+  "events": [
+    { "title": "Git & GitHub Basics", "date": "2025-07-15" },
+    { "title": "Linux Installation Drive", "date": "2025-08-10" },
+    { "title": "Hacktoberfest Contributions", "date": "2025-10-01" }
+  ],
+
+  "join": {
+    "ctaText": "Join our Community",
+    "formLink": "https://forms.gle/example"
+  },
+
+  "team": [
+    { "name": "Akshay K A", "role": "Club Lead", "image": "akshay.jpg" },
+    { "name": "Sarah Chen", "role": "Outreach Lead", "image": "outreach.jpg" },
+    { "name": "Alex Rodriguez", "role": "Design Lead", "image": "design.jpg" }
+  ],
+
+  "gallery": [
+    { "src": "event1.jpg", "caption": "Linux Bootcamp" },
+    { "src": "event2.jpg", "caption": "GitHub Session" }
+  ],
+
+  "partners": [
+    {
+      "name": "μLearn",
+      "logo": "mulearn.png",
+      "link": "https://mulearn.org"
+    },
+    {
+      "name": "MAMOC",
+      "logo": "mamoc.png",
+      "link": "https://mamocollege.org"
+    }
+  ],
+
+  "socials": [
+    { "platform": "Discord", "url": "https://discord.gg/yourlink" },
+    { "platform": "GitHub", "url": "https://github.com/foss-mamo" },
+    { "platform": "Instagram", "url": "https://instagram.com/fossclubmamoc" }
+  ]
+}
