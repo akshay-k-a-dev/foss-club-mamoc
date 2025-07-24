@@ -3,7 +3,9 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Objectives from '../components/Objectives';
 import Events from '../components/Events';
+import JoinForm from '../components/JoinForm';
 import Team from '../components/Team';
+import Gallery from '../components/Gallery';
 import Partners from '../components/Partners';
 import Footer from '../components/Footer';
 
@@ -38,7 +40,9 @@ const Index = () => {
       <About data={data.about} />
       <Objectives data={data.objectives} />
       <Events data={data.events} />
+      <JoinForm data={data.join} socials={data.socials} />
       <Team data={data.team} />
+      <Gallery data={data.gallery} />
       <Partners data={data.partners} />
       <Footer data={data} />
     </div>
