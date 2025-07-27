@@ -2,7 +2,7 @@
   "clubName": "FOSS Club — MAMO College",
   "tagline": "Code. Collaborate. Contribute.",
   "ctaText": "Join the Movement",
-  "ctaLink": "https://discord.gg/yourlink",
+  "ctaLink": "https://chat.whatsapp.com/Fb8s1bU6mMaAu8F0bf9xx0",
 
   "about": {
     "description": "The FOSS Club at MAMO College is a student-led initiative to promote the values of Free and Open Source Software. We conduct hands-on sessions, hackathons, contribution drives, and open community events to empower students through tech freedom and collaboration."
@@ -51,7 +51,7 @@
   ],
 
   "socials": [
-    { "platform": "Discord", "url": "https://discord.gg/yourlink" },
+    { "platform": "Discord", "url": "https://chat.whatsapp.com/Fb8s1bU6mMaAu8F0bf9xx0" },
     { "platform": "GitHub", "url": "https://github.com/akshay-k-a-dev" },
     { "platform": "Instagram", "url": "https://instagram.com/fossclub.mamoc" }
   ]
