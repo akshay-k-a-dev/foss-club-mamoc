@@ -68,7 +68,7 @@ const Events = ({ data }: EventsProps) => {
                   }`}
                   style={{ transitionDelay: `${(index + 1) * 200}ms` }}
                 >
-                  <div className="flex items-center gap-6">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                     {/* Date Box */}
                     <div className="flex-shrink-0 text-center p-4 bg-primary/20 rounded-lg border border-primary/30 glow-primary">
                       <div className="text-2xl font-bold text-primary">{day}</div>
@@ -77,11 +77,11 @@ const Events = ({ data }: EventsProps) => {
                     </div>
 
                     {/* Event Details */}
-                    <div className="flex-grow">
+                    <div className="flex-grow min-w-0">
                       <h3 className="text-xl font-semibold text-foreground mb-2">
                         {event.title}
                       </h3>
-                      <div className="flex items-center gap-4 text-muted-foreground text-sm">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-muted-foreground text-sm">
                         <div className="flex items-center gap-1">
                           <Clock className="w-4 h-4" />
                           <span>6:00 PM - 8:00 PM</span>
@@ -94,7 +94,7 @@ const Events = ({ data }: EventsProps) => {
                     </div>
 
                     {/* RSVP Button */}
-                    <button className="px-6 py-2 bg-secondary/20 text-secondary border border-secondary/30 rounded-lg hover:bg-secondary/30 transition-all duration-300 hover:scale-105">
+                    <button className="w-full sm:w-auto px-6 py-2 bg-secondary/20 text-secondary border border-secondary/30 rounded-lg hover:bg-secondary/30 transition-all duration-300 hover:scale-105 flex-shrink-0">
                       RSVP
                     </button>
                   </div>
