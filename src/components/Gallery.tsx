@@ -35,7 +35,7 @@ const Gallery = ({ data }: GalleryProps) => {
   return (
     <section id="gallery" ref={sectionRef} className="py-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className={`inline-flex items-center gap-2 mb-4 transition-all duration-1000 transform ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
