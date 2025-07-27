@@ -81,24 +81,6 @@ const Partners = ({ data }: PartnersProps) => {
               </a>
             ))}
           </div>
-
-          {/* Partnership CTA */}
-          <div className={`mt-16 transition-all duration-1000 delay-500 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}>
-            <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold text-gradient mb-4">
-                Interested in Partnering?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                Join forces with us to promote FOSS culture and make a bigger impact in the tech community.
-              </p>
-              <button className="btn-cyber">
-                <Handshake className="w-4 h-4 mr-2" />
-                Partner With Us
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
