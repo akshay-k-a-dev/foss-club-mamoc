@@ -101,23 +101,6 @@ const Team = ({ data }: TeamProps) => {
             ))}
           </div>
 
-          {/* Join Team CTA */}
-          <div className={`text-center mt-16 transition-all duration-1000 delay-500 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}>
-            <div className="glass-card p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-gradient mb-4">
-                Want to Join Our Team?
-              </h3>
-              <p className="text-muted-foreground mb-6">
-                We're always looking for passionate individuals to help lead the FOSS movement. 
-                Whether you're into development, design, or community building, we have a place for you.
-              </p>
-              <button className="btn-cyber">
-                Apply to Join
-              </button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
