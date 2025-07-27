@@ -27,7 +27,7 @@
   },
 
   "team": [
-    { "name": "Akshay K A", "role": "Club Lead", "image": "akshay.jpg" },
+    { "name": "Akshay K A", "role": "Club Lead", "image": "https://raw.githubusercontent.com/akshay-k-a-dev/campus-chapter/refs/heads/dev/src/assets/images/akshayka.jpeg" },
     { "name": "Sarah Chen", "role": "Outreach Lead", "image": "outreach.jpg" },
     { "name": "Alex Rodriguez", "role": "Design Lead", "image": "design.jpg" }
   ],
