@@ -53,21 +53,21 @@ const About = ({ data }: AboutProps) => {
 
   return (
     <section id="about" ref={sectionRef} className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto text-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center">
           <h2 className={`text-4xl md:text-5xl font-bold mb-8 text-gradient transition-all duration-1000 transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             About FOSS Club
           </h2>
           
-          <p className={`text-lg md:text-xl text-muted-foreground mb-16 leading-relaxed transition-all duration-1000 delay-200 transform ${
+          <p className={`text-lg md:text-xl text-muted-foreground mb-16 leading-relaxed max-w-3xl mx-auto transition-all duration-1000 delay-200 transform ${
             isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             {data.description}
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {features.map((feature, index) => (
               <div
                 key={feature.title}
