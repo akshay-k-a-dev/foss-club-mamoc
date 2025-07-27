@@ -16,10 +16,16 @@
   ],
 
   "events": [
-    { "title": "Git & GitHub Basics", "date": "2025-07-15" },
-    { "title": "Linux Installation Drive", "date": "2025-08-10" },
-    { "title": "Hacktoberfest Contributions", "date": "2025-10-01" }
+    { "title": "Git & GitHub Basics", "date": "2025-07-15", "rsvpLink": "https://forms.gle/git-github-rsvp" },
+    { "title": "Linux Installation Drive", "date": "2025-08-10", "rsvpLink": "https://forms.gle/linux-installation-rsvp" },
+    { "title": "Hacktoberfest Contributions", "date": "2025-10-01", "rsvpLink": "https://forms.gle/hacktoberfest-rsvp" }
   ],
+
+  "stats": {
+    "activeMembers": 150,
+    "projects": 25,
+    "contributions": 1200
+  },
 
   "join": {
     "ctaText": "Join our Community",
@@ -27,9 +33,36 @@
   },
 
   "team": [
-    { "name": "Akshay K A", "role": "Club Lead", "image": "https://raw.githubusercontent.com/akshay-k-a-dev/campus-chapter/refs/heads/dev/src/assets/images/akshayka.jpeg" },
-    { "name": "Sarah Chen", "role": "Outreach Lead", "image": "outreach.jpg" },
-    { "name": "Alex Rodriguez", "role": "Design Lead", "image": "design.jpg" }
+    { 
+      "name": "Akshay K A", 
+      "role": "Club Lead", 
+      "image": "https://raw.githubusercontent.com/akshay-k-a-dev/campus-chapter/refs/heads/dev/src/assets/images/akshayka.jpeg",
+      "socials": {
+        "github": "https://github.com/akshay-k-a-dev",
+        "linkedin": "https://linkedin.com/in/akshay-k-a",
+        "twitter": "https://twitter.com/akshayka_dev"
+      }
+    },
+    { 
+      "name": "Sarah Chen", 
+      "role": "Outreach Lead", 
+      "image": "outreach.jpg",
+      "socials": {
+        "github": "https://github.com/sarahchen",
+        "linkedin": "https://linkedin.com/in/sarahchen",
+        "twitter": "https://twitter.com/sarahchen"
+      }
+    },
+    { 
+      "name": "Alex Rodriguez", 
+      "role": "Design Lead", 
+      "image": "design.jpg",
+      "socials": {
+        "github": "https://github.com/alexrodriguez",
+        "linkedin": "https://linkedin.com/in/alexrodriguez", 
+        "twitter": "https://twitter.com/alexrodriguez"
+      }
+    }
   ],
 
   "gallery": [
