@@ -4,6 +4,7 @@ import { Calendar, Clock, MapPin } from 'lucide-react';
 interface Event {
   title: string;
   date: string;
+  rsvpLink: string;
 }
 
 interface EventsProps {
@@ -94,9 +95,14 @@ const Events = ({ data }: EventsProps) => {
                     </div>
 
                     {/* RSVP Button */}
-                    <button className="w-full sm:w-auto px-6 py-2 bg-secondary/20 text-secondary border border-secondary/30 rounded-lg hover:bg-secondary/30 transition-all duration-300 hover:scale-105 flex-shrink-0">
+                    <a 
+                      href={event.rsvpLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full sm:w-auto px-6 py-2 bg-secondary/20 text-secondary border border-secondary/30 rounded-lg hover:bg-secondary/30 transition-all duration-300 hover:scale-105 flex-shrink-0 text-center"
+                    >
                       RSVP
-                    </button>
+                    </a>
                   </div>
                 </div>
               );

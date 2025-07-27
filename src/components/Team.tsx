@@ -6,6 +6,11 @@ interface TeamMember {
   name: string;
   role: string;
   image: string;
+  socials: {
+    github: string;
+    linkedin: string;
+    twitter: string;
+  };
 }
 
 interface TeamProps {
@@ -87,15 +92,30 @@ const Team = ({ data }: TeamProps) => {
 
                 {/* Social Links */}
                 <div className="flex justify-center gap-3">
-                  <button className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110">
+                  <a 
+                    href={member.socials.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110"
+                  >
                     <Github className="w-4 h-4" />
-                  </button>
-                  <button className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110">
+                  </a>
+                  <a 
+                    href={member.socials.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110"
+                  >
                     <Linkedin className="w-4 h-4" />
-                  </button>
-                  <button className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110">
+                  </a>
+                  <a 
+                    href={member.socials.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-muted/20 rounded-full hover:bg-primary/20 hover:text-primary transition-all duration-300 hover:scale-110"
+                  >
                     <Twitter className="w-4 h-4" />
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}

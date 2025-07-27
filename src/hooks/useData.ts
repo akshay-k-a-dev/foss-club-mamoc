@@ -12,7 +12,13 @@ interface ClubData {
   events: Array<{
     title: string;
     date: string;
+    rsvpLink: string;
   }>;
+  stats: {
+    activeMembers: number;
+    projects: number;
+    contributions: number;
+  };
   join: {
     ctaText: string;
     formLink: string;
@@ -21,6 +27,11 @@ interface ClubData {
     name: string;
     role: string;
     image: string;
+    socials: {
+      github: string;
+      linkedin: string;
+      twitter: string;
+    };
   }>;
   gallery: Array<{
     src: string;

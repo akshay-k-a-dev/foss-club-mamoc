@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, Code, Users, Zap } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
+import { useCounterAnimation } from '../hooks/useCounterAnimation';
 import heroImage from '../assets/hero-bg.jpg';
 
 interface HeroProps {
@@ -9,15 +10,29 @@ interface HeroProps {
     tagline: string;
     ctaText: string;
     ctaLink: string;
+    stats: {
+      activeMembers: number;
+      projects: number;
+      contributions: number;
+    };
   };
 }
 
 const Hero = ({ data }: HeroProps) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [statsVisible, setStatsVisible] = useState(false);
+
+  const activeMembers = useCounterAnimation(data.stats.activeMembers, 2000, statsVisible);
+  const projects = useCounterAnimation(data.stats.projects, 2000, statsVisible);
+  const contributions = useCounterAnimation(data.stats.contributions, 2500, statsVisible);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsVisible(true), 300);
-    return () => clearTimeout(timer);
+    const statsTimer = setTimeout(() => setStatsVisible(true), 1000);
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(statsTimer);
+    };
   }, []);
 
   const scrollToAbout = () => {
@@ -114,15 +129,15 @@ const Hero = ({ data }: HeroProps) => {
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`}>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
+            <div className="text-3xl font-bold text-primary mb-2">{activeMembers}+</div>
             <div className="text-sm text-muted-foreground">Active Members</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-secondary mb-2">25+</div>
+            <div className="text-3xl font-bold text-secondary mb-2">{projects}+</div>
             <div className="text-sm text-muted-foreground">Projects</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-accent mb-2">100+</div>
+            <div className="text-3xl font-bold text-accent mb-2">{contributions}+</div>
             <div className="text-sm text-muted-foreground">Contributions</div>
           </div>
         </div>
