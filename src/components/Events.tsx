@@ -109,18 +109,6 @@ const Events = ({ data }: EventsProps) => {
             })}
           </div>
 
-          {/* Call to Action */}
-          <div className={`text-center mt-12 transition-all duration-1000 delay-500 transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-          }`}>
-            <p className="text-muted-foreground mb-4">
-              Want to stay updated on all our events?
-            </p>
-            <button className="btn-cyber">
-              <Calendar className="w-4 h-4 mr-2" />
-              Subscribe to Calendar
-            </button>
-          </div>
         </div>
       </div>
     </section>
