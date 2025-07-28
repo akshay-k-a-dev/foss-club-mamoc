@@ -6,7 +6,7 @@ import Events from '../components/Events';
 import JoinForm from '../components/JoinForm';
 import Team from '../components/Team';
 import Gallery from '../components/Gallery';
-import Partners from '../components/Partners';
+
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -43,7 +43,7 @@ const Index = () => {
       <Gallery data={data.gallery} />
       <JoinForm data={data.join} socials={data.socials} />
       <Team data={data.team} />
-      <Partners data={data.partners} />
+      
       <Footer data={data} />
     </div>
   );
