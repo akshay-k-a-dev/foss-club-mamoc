@@ -114,9 +114,6 @@ const Footer = ({ data }: FooterProps) => {
           <p className="text-muted-foreground text-sm flex items-center gap-1">
             Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> by FOSS Club
           </p>
-          <p className="text-muted-foreground text-sm mt-2 md:mt-0">
-            © {currentYear} {data.clubName}. All rights reserved.
-          </p>
         </div>
       </div>
     </footer>
