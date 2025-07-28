@@ -63,11 +63,20 @@ const Partners = ({ data }: PartnersProps) => {
                 }`}
                 style={{ transitionDelay: `${(index + 1) * 200}ms` }}
               >
-                <div className="flex items-center justify-center h-24 mb-6 bg-muted/20 rounded-lg group-hover:bg-primary/10 transition-all duration-300">
-                  {/* Placeholder for logo */}
-                  <div className="text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300">
-                    {partner.name.slice(0, 2)}
-                  </div>
+                <div className="flex items-center justify-center h-24 mb-6 bg-muted/20 rounded-lg group-hover:bg-primary/10 transition-all duration-300 p-4">
+                  <img
+                    src={partner.logo}
+                    alt={`${partner.name} logo`}
+                    className="max-h-full max-w-full object-contain group-hover:scale-110 transition-transform duration-300"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      const fallback = document.createElement('div');
+                      fallback.className = 'text-4xl font-bold text-primary group-hover:scale-110 transition-transform duration-300';
+                      fallback.textContent = partner.name.slice(0, 2);
+                      target.parentNode?.appendChild(fallback);
+                    }}
+                  />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">

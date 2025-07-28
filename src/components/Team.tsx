@@ -71,7 +71,7 @@ const Team = ({ data }: TeamProps) => {
                 <div className="relative mb-6 mx-auto w-32 h-32">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary to-secondary rounded-full p-1 glow-primary group-hover:animate-pulse">
                     <img
-                      src={teamPlaceholder}
+                      src={member.image}
                       alt={member.name}
                       className="w-full h-full rounded-full object-cover bg-card"
                       onError={(e) => {
